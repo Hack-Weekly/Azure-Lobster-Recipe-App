@@ -12,7 +12,7 @@
     <div class="font-bold text-xl mb-2">{recipe.name}</div>
     <div class="flex flex-wrap">
       {#each recipe.categories as category}
-        <span class="mr-2 mb-2 p-1 bg-gray-200 text-gray-700 text-sm rounded">{category}</span>
+        <button class="mr-2 mb-2 p-1 hover:border-sky-500 border-2 border-gray-200 bg-gray-200 text-gray-700 text-sm rounded">{category}</button>
       {/each}
     </div>
   </div>
