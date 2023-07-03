@@ -1,5 +1,7 @@
 <script>
-	export let links = [];
+	export let links = [
+		{ url: './mock', text: 'subpage1' },
+	];;
 </script>
 
 <nav class="bg-black text-white mb-2">
