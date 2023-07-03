@@ -11,4 +11,3 @@
 <main class="px-2 md:px-24">
 	<slot />
 </main>
-

@@ -9,10 +9,15 @@
 
 <div class="max-w-xs mx-auto bg-white rounded overflow-hidden shadow-lg">
 	<div class="aspect-video">
-  <img class="object-cover object-center w-full h-full" src={recipe.image} alt="Recipe" onerror="this.style.display='none'" />
-  <div class="flex justify-center items-center w-full h-full bg-stone-300">
-    <ImageOff />
-  </div>
+		<img
+			class="object-cover object-center w-full h-full"
+			src={recipe.image}
+			alt="Recipe"
+			onerror="this.style.display='none'"
+		/>
+		<div class="flex justify-center items-center w-full h-full bg-stone-300">
+			<ImageOff />
+		</div>
 	</div>
 	<div class="px-6 py-4">
 		<div class="font-bold text-xl mb-2">{recipe.name}</div>
