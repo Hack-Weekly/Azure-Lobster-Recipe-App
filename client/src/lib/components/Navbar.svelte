@@ -1,5 +1,5 @@
 <script>
-	export let links = [{ url: './mock', text: 'subpage1' }];
+	export let links = [{ url: './mock', text: 'mockup' }];
 	import { ChefHat } from 'lucide-svelte';
 </script>
 

@@ -1,6 +1,6 @@
 <script>
-	import { SearchIcon } from 'lucide-svelte';
-	import RecipePreview from './recipePreview.svelte';
+	import { SearchIcon, RotateCw } from 'lucide-svelte';
+	import RecipePreview from '$lib/components/recipePreview.svelte';
 	import { onMount } from 'svelte';
 
 	let recipes = [];
@@ -20,7 +20,7 @@
 
 			recipes = [...recipes, ...newRecipes];
 			isLoading = false;
-		}, 1000);
+		}, 5000);
 	}
 
 	onMount(() => {
@@ -51,9 +51,9 @@
 	{#each recipes as recipe}
 		<RecipePreview {recipe} />
 	{/each}
-	{#if isLoading}
-		<div class="flex justify-center my-4">
-			<span class="text-gray-500">Loading...</span>
-		</div>
-	{/if}
 </div>
+{#if isLoading}
+	<div class="flex justify-center my-4 flex-row">
+		<span class="">Loading...</span><RotateCw class="animate-spin" />
+	</div>
+{/if}
